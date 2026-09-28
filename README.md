@@ -1,9 +1,13 @@
 # MIDI Tempo Scaler
+[![Python 3.6+](https://img.shields.io/badge/python-3.6+-3776AB.svg?style=flat&logo=python&logoColor=white)](https://www.python.org/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![Dependency: Mido](https://img.shields.io/badge/dependency-mido-informational)](https://mido.readthedocs.io/)
 
 A minimal Python utility designed to adjust the tempo (BPM) of a MIDI file while preserving its playback timing and relative note placement.
 
 When you simply change the tempo meta event in a MIDI file, playback speeds up or slows down. This script scales the file's `ticks_per_beat` (resolution) proportionally to the BPM shift, keeping the actual wall-clock playback speed identical while registering the new target BPM header.
 
+![MIDI Tempo Scaler](assets/image.jpeg)
 ---
 
 ## Features
